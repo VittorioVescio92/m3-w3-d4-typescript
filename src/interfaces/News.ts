@@ -17,4 +17,5 @@ export interface NewsProps {
   title: string;
   newsSite: string;
   id: number;
+  publishedAt: string;
 }

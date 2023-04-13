@@ -29,7 +29,13 @@ const Home = () => {
       <Row xs={2} lg={4}>
         {news.map(n => (
           <Col key={n.id}>
-            <NewsComponent imageUrl={n.imageUrl} title={n.title} newsSite={n.newsSite} id={n.id} />
+            <NewsComponent
+              imageUrl={n.imageUrl}
+              title={n.title}
+              newsSite={n.newsSite}
+              id={n.id}
+              publishedAt={n.publishedAt.toString()}
+            />
           </Col>
         ))}
       </Row>

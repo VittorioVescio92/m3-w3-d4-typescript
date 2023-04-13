@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Container className="mt-5">
+    <Container className="my-5">
       <Row xs={2} lg={4}>
         {news.map(n => (
           <Col key={n.id}>

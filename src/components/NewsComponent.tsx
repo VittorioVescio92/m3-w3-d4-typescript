@@ -6,7 +6,7 @@ const NewsComponent = ({ imageUrl, title, newsSite, id }: NewsProps) => {
   const navigate = useNavigate();
   return (
     <Card className="my-2">
-      <Card.Img variant="top" src={imageUrl} />
+      <Card.Img id="img" variant="top" src={imageUrl} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{newsSite}</Card.Text>
